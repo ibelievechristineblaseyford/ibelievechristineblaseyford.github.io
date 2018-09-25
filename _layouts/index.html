@@ -1,77 +1,38 @@
 <!DOCTYPE html>
-<meta http-equiv="refresh" content="0; url=http://ibelievechristine.com/">
 <html lang="{{ page.lang | default: site.lang | default: "en" }}">
-
+  <meta http-equiv="refresh" content="0; http://ibelievechristine.com/">
   {%- include head.html -%}
-
-<style>
-  .post-content a {
-    display: inline-block;
-    padding: 18px 24px;
-    font-size: 18px;
-    color: #fff;
-    background: #369;
-    border-radius: 12px;
-  }
-</style>
+  <style>
+    .hidden { visibility: hidden; }
+    .post a {
+      display: inline-block;
+      padding: 12px 24px;
+      font-size: 18px;
+      color: #fff;
+      background: #369;
+      border-radius: 12px;
+    }
+  </style>
 
   <body>
-
     {%- include header.html -%}
-
-<main class="page-content" aria-label="Content">
+    <main class="page-content" aria-label="Content">
       <div class="wrapper">
         <article class="post">
+          <p>Loading...</p>
 
-  <header class="post-header">
-    <h1 class="post-title"></h1>
-  </header>
+          <div id="link" class="hidden">
+            <a href="http://ibelievechristine.com/">This page has moved; click here to continue.</a>
+          </div>
 
-  <div class="post-content">
-    {{ content }}
-  </div>
-
-  <p>
-  <table>
-    <tr valign=top>
-      <th><a href="https://twitter.com/search?f=videos&q=%23IBelieveChristineBlaseyFord&src=typd">Twitter</th>
-      <th><a href="https://www.facebook.com/search/videos/?q=%23ibelievechristineblaseyford">Facebook</a></th>
-    </tr>
-    <tr valign=top>
-      <td width="50%">
-  <a class="twitter-timeline" href="https://twitter.com/ibelievecbf?ref_src=twsrc%5Etfw">Tweets by @ibelievecbf</a> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
-      </td>
-
-      <td width="50%">
-        <iframe src="https://www.facebook.com/plugins/video.php?href=https%3A%2F%2Fwww.facebook.com%2Fraydeng%2Fvideos%2F10101875693432152%2F&show_text=1&width=324" width="324" height="408" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowTransparency="true" allow="encrypted-media" allowFullScreen="true"></iframe>
-
-        <iframe src="https://www.facebook.com/plugins/video.php?href=https%3A%2F%2Fwww.facebook.com%2Frobertvandewalle%2Fvideos%2F10156162726458649%2F&show_text=1&width=324" width="324" height="324" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowTransparency="true" allow="encrypted-media" allowFullScreen="true"></iframe>
-
-        <iframe src="https://www.facebook.com/plugins/video.php?href=https%3A%2F%2Fwww.facebook.com%2Fdominic.dragonfly%2Fvideos%2F10105163762225905%2F&show_text=1&width=324" width="324" height="412" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowTransparency="true" allow="encrypted-media" allowFullScreen="true"></iframe>
-
-        <iframe src="https://www.facebook.com/plugins/video.php?href=https%3A%2F%2Fwww.facebook.com%2FJasonAsbahr%2Fvideos%2F10155461764747186%2F&show_text=1&width=324" width="324" height="354" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowTransparency="true" allow="encrypted-media" allowFullScreen="true"></iframe>
-
-        <iframe src="https://www.facebook.com/plugins/video.php?href=https%3A%2F%2Fwww.facebook.com%2Fscott.adams.908132%2Fvideos%2F10156859313088103%2F&show_text=1&width=324" width="324" height="284" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowTransparency="true" allow="encrypted-media" allowFullScreen="true"></iframe>
-
-        <iframe src="https://www.facebook.com/plugins/video.php?href=https%3A%2F%2Fwww.facebook.com%2Fzestyping%2Fvideos%2F10108528061268663%2F&show_text=1&width=324" width="324" height="392" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowTransparency="true" allow="encrypted-media" allowFullScreen="true"></iframe>
-
-        <iframe src="https://www.facebook.com/plugins/video.php?href=https%3A%2F%2Fwww.facebook.com%2Fnicholas.t.mcdowell%2Fvideos%2F10155736182476845%2F&show_text=1&width=324" width="324" height="416" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowTransparency="true" allow="encrypted-media" allowFullScreen="true"></iframe>
-
-        <iframe src="https://www.facebook.com/plugins/video.php?href=https%3A%2F%2Fwww.facebook.com%2Fnon.obj%2Fvideos%2F10156847063106349%2F&show_text=1&width=324" width="324" height="364" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowTransparency="true" allow="encrypted-media" allowFullScreen="true"></iframe>
-
-        <iframe src="https://www.facebook.com/plugins/video.php?href=https%3A%2F%2Fwww.facebook.com%2Falfred.twu%2Fvideos%2F10108528819878403%2F&show_text=1&width=324" width="324" height="412" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowTransparency="true" allow="encrypted-media" allowFullScreen="true"></iframe>
-
-      </td>
-    </tr>
-  </table>
-  </p>
-
-</article>
+          <script>
+            function show() {
+              document.getElementById('link').className = '';
+            }
+            setTimeout(show, 5000);
+          </script>
+        </article>
       </div>
     </main>
-
-    {%- include footer.html -%}
-
   </body>
-
 </html>
